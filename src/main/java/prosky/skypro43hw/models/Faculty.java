@@ -1,8 +1,7 @@
 package prosky.skypro43hw.models;
 
 
-import org.hibernate.annotations.Entity;
-
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Objects;
@@ -12,7 +11,9 @@ public class Faculty {
     @Id
     @GeneratedValue
     private Long id;
+
     private String name;
+
     private String color;
 
     public Faculty() {
